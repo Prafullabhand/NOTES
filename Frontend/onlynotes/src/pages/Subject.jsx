@@ -9,7 +9,7 @@ export default function Subject() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/notes/${pattern}/${year}/${semester}`)
+      .get(`https://notes-backend-50p.onrender.com/api/notes/${pattern}/${year}/${semester}`)
       .then(res => {
         // backend returns simple subject strings
         const clean = [...new Set(res.data.map(s => s.trim()))];

@@ -39,7 +39,7 @@ export default function AdminUpload() {
       form.append("file", file);
 
       await axios.post(
-        "http://localhost:5000/api/admin/upload",
+        "https://notes-backend-50p.onrender.com/api/admin/upload",
         form,
         {
           headers: {

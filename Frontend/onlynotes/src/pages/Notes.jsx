@@ -9,7 +9,7 @@ export default function Notes() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/notes/${pattern}`)
+      .get(`https://notes-backend-50p.onrender.com/api/notes/${pattern}`)
       .then(res => setYears(res.data));
   }, [pattern]);
 
