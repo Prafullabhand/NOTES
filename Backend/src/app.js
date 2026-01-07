@@ -34,5 +34,8 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/notes", notesRoutes);
 app.use("/api/admin", adminRoutes);
+app.get("/", (req, res) => {
+  res.send("OnlyNotes backend is live");
+});
 
 export default app;
