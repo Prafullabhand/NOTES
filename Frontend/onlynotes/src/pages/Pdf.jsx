@@ -8,7 +8,7 @@ export default function PDF() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/notes/${pattern}/${year}/${semester}/${subject}`)
+      .get(`https://notes-backend-50pr.onrender.com/api/notes/${pattern}/${year}/${semester}/${subject}`)
       .then(res => {
         // backend returns full note objects
         setNotes(res.data || []);
