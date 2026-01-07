@@ -11,10 +11,12 @@ const app = express();
 
 app.use(cors({
   origin: [
-    "https://notes-dipsq8y4o-prafulla-bhands-projects.vercel.app"
+    "http://localhost:5173",
+    /^https:\/\/.*\.vercel\.app$/
   ],
   credentials: true
 }));
+
 
 app.use(express.json());
 
