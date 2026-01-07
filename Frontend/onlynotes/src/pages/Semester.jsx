@@ -8,7 +8,7 @@ export default function Semester() {
   const [subjects, setSubjects] = useState([]);
 
   useEffect(() => {
-    axios.get(`https://notes-backend-50p.onrender.com/api/notes/${pattern}/${year}/${semester}`)
+    axios.get(`https://notes-backend-50pr.onrender.com/api/notes/${pattern}/${year}/${semester}`)
       .then(res => setSubjects(res.data));
   }, [pattern, year, semester]);
 

@@ -6,7 +6,7 @@ export default function AdminPanel() {
   const token = localStorage.getItem("token");
 
   useEffect(() => {
-    axios.get("https://notes-backend-50p.onrender.com/api/admin/users", {
+    axios.get("https://notes-backend-50pr.onrender.com/api/admin/users", {
       headers: { Authorization: `Bearer ${token}` }
     }).then(res => setUsers(res.data.users));
   }, []);

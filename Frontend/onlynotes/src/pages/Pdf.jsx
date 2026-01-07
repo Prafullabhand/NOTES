@@ -29,7 +29,7 @@ export default function PDF() {
           <div key={n._id} className="bg-black p-6 rounded-xl border border-slate-800">
             <h2 className="text-lg mb-2">{n.title}</h2>
             <a
-  href={`https://notes-backend-50p.onrender.com/api/notes/download/pdf?url=${encodeURIComponent(n.fileUrl)}&title=${encodeURIComponent(n.title)}`}
+  href={`https://notes-backend-50pr.onrender.com/api/notes/download/pdf?url=${encodeURIComponent(n.fileUrl)}&title=${encodeURIComponent(n.title)}`}
   className="bg-emerald-600 px-4 py-2 rounded inline-block mt-2"
 >
   Download PDF
